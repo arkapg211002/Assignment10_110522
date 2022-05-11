@@ -20,8 +20,9 @@ int main()
     char ch;
     printf("Enter a string: ");
     scanf("%[^\n]", str);
-    fflush(stdin);
     printf("Enter a character: ");
+    fflush(stdin);
+    getchar();
     scanf("%c", &ch);
     frequency(str, ch);
     return 0;
