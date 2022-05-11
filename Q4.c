@@ -17,8 +17,9 @@ int main()
     char str1[100], str2[100];
     printf("Enter first string: ");
     scanf("%[^\n]", str1);
-    fflush(stdin);
     printf("Enter second string: ");
+    fflush(stdin);
+    getchar();
     scanf("%[^\n]", str2);
     concat(str1, str2);
     printf("%s\n", str1);
